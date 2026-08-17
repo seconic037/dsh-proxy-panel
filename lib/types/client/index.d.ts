@@ -6,5 +6,6 @@
  */
 import type { ClientContext } from '@deepseek-ai/dsh-client-runtime/client';
 /** Register the panel as its own Settings section. */
+export declare const inject: string[];
 export declare function apply(ctx: ClientContext): void;
 export declare const name = "dsh-proxy-panel";

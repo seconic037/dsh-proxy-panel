@@ -113,6 +113,8 @@ function ProxyPanel(_props: PanelProps): JSX.Element {
 }
 
 /** Register the panel as its own Settings section. */
+export const inject = ['slots', 'settings']
+
 export function apply(ctx: ClientContext): void {
   ctx.slots.inject('settings.section', () => ctx.slots.register(
     { name: 'settings.section', id: 'proxy-panel', order: 99, label: () => '代理状态' },
