@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "ignoreDeprecations": "6.0",
+    "jsx": "react-jsx",
+    "rootDir": "src/client",
+    "outDir": ".client-build",
+    "declaration": true,
+    "declarationDir": "lib/types/client",
+    "sourceMap": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "noEmitOnError": true,
+    "types": ["react"],
+    "typeRoots": ["./node_modules/@types"],
+    "paths": {
+      "@deepseek-ai/dsh-client-runtime/client": ["./node_modules/@deepseek-ai/dsh-client-runtime/lib/types/client/index.d.ts"],
+      "@deepseek-ai/dsh-client-ui-settings/client": ["./node_modules/@deepseek-ai/dsh-client-ui-settings/lib/types/client/index.d.ts"]
+    }
+  },
+  "include": ["src/client/index.tsx"]
+}

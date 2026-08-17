@@ -1,0 +1,7 @@
+# dsh-proxy-panel bundle patch: mounts a real-time proxy (mihomo) status panel
+# into the web profile's settings section. The host half exposes a read-only
+# /_dsh/proxy-panel/status route backed by the local mihomo control API; the
+# client polls it to render node / latency / run-state.
+- insert:
+    - id: proxy-panel
+      name: 'dsh-proxy-panel'
