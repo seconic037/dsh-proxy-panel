@@ -14,10 +14,10 @@ DSH web 插件：在 3080 的 DSH 界面 **设置** 页提供一个 **代理状�
 
 ## 安装
 
-从 GitHub 源安装（锁定 `v0.1.0` tag，仓库已提交预构建 `lib/`，无需生命周期脚本）：
+从 GitHub 源安装（锁定 `v0.1.1` tag，仓库已提交预构建 `lib/`，无需生命周期脚本）：
 
 ```sh
-dsh plugin --profile web add github:seconic037/dsh-proxy-panel#v0.1.0
+dsh plugin --profile web add github:seconic037/dsh-proxy-panel#v0.1.1
 ```
 
 或从 DSH Hub 市场 / npm / tarball 安装预构建版：

@@ -112,8 +112,11 @@ function ProxyPanel(_props: PanelProps): JSX.Element {
   )
 }
 
-/** Register the panel as its own Settings section. */
-export const inject = ['slots', 'settings']
+/** Register the panel as its own Settings section. Only `slots` is read: the
+ * loader sequences activation on the services listed here, and `settings` is
+ * not a service — `ctx.slots.inject('settings.section', …)` waits on the slot
+ * declaration instead (keep service edges to what the contribution reads). */
+export const inject = ['slots']
 
 export function apply(ctx: ClientContext): void {
   ctx.slots.inject('settings.section', () => ctx.slots.register(
